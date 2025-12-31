@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(to bottom, #f5f5f5, #e5e5e5);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.25rem;
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e5e5;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 0.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-links a {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  letter-spacing: -0.025em;
+  text-decoration: none;
+  transition: color 0.2s;
+  color: #a3a3a3;
+}
+
+.nav-links a:hover {
+  color: #171717;
+}
+
+.nav-links a:focus {
+  outline: none;
+  color: #171717;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.nav-links a.active {
+  color: #171717;
+  background: #e5e5e5;
+}
+
+.social-links {
+  display: none;
+}
+
+.social-links a {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  letter-spacing: -0.025em;
+  color: #a3a3a3;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: all 0.2s;
+  cursor: alias;
+}
+
+.social-links a:hover {
+  color: #171717;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.social-links a:focus {
+  outline: none;
+  color: #171717;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.hero-section {
+  padding: 0.25rem;
+  padding-bottom: 0.5rem;
+  opacity: 1;
+  transform: none;
+}
+
+.hero-content {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.hero-heading {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #a3a3a3;
+}
+
+.hero-heading .name {
+  color: #171717;
+}
+
+.hero-heading a {
+  border-radius: 0.25rem;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.hero-heading a:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.hero-heading a.digital-garden {
+  cursor: alias;
+  text-decoration-style: dotted;
+}
+
+.hero-heading a.digital-garden:hover {
+  color: #737373;
+}
+
+.hero-heading a.things {
+  color: #171717;
+  text-underline-offset: 4px;
+  text-decoration-color: #fb923c;
+}
+
+.hero-heading a.things:hover {
+  text-decoration: underline;
+}
+
+.hero-heading a.mobbin {
+  cursor: alias;
+  color: #171717;
+  text-decoration-style: wavy;
+  text-underline-offset: 4px;
+  text-decoration-color: #38bdf8;
+}
+
+.hero-heading a.mobbin:hover {
+  text-decoration: underline;
+}
+
+.hero-heading a.coffee {
+  color: #171717;
+  text-underline-offset: 4px;
+  text-decoration-color: #fb7185;
+}
+
+.hero-heading a.coffee:hover {
+  text-decoration: underline;
+}
+
+.hero-heading a.plants {
+  color: #171717;
+  text-underline-offset: 4px;
+  text-decoration-color: #a3e635;
+}
+
+.hero-heading a.plants:hover {
+  text-decoration: underline;
+}
+
+.hero-heading a.climbing {
+  color: #171717;
+  text-underline-offset: 4px;
+  text-decoration-color: #c084fc;
+}
+
+.hero-heading a.climbing:hover {
+  text-decoration: underline;
+}
+
+.hero-heading a.reading {
+  color: #171717;
+  text-underline-offset: 4px;
+  text-decoration-color: #e879f9;
+}
+
+.hero-heading a.reading:hover {
+  text-decoration: underline;
+}
+
+.hero-heading a.writing {
+  color: #171717;
+  text-underline-offset: 4px;
+  text-decoration-color: #2dd4bf;
+}
+
+.hero-heading a.writing:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .hero-content {
+    padding: 2rem;
+  }
+
+  .hero-heading {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  .social-links {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.2s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 2.25rem;
+  }
+}
